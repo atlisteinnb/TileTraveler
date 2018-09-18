@@ -17,7 +17,7 @@ while not (x==3 and y==1):
         print("You can travel: (N)orth")
         Direction = str(input("Direction: "))
         valid_direction = 'n'
-        if (Direction==valid_direction):
+        if (Direction=='n' or Direction== 'N'):
             y = y+1
         else:
             print("Not a valid direction!")
@@ -25,12 +25,12 @@ while not (x==3 and y==1):
     elif (x,y) == (1,2):
         print("You can travel: (N)orth or (S)outh or (E)ast")
         Direction = str(input("Direction: "))
-        valid_direction = 'n' 's' 'e'
-        if (Direction=='s'):
+        valid_direction = 'n' 's' 'e' 'N' 'S' 'E'
+        if (Direction=='s' or Direction== 'S'):
             y = y-1
-        elif(Direction=='n'):
+        elif(Direction=='n' or Direction== 'N'):
             y= y+1 
-        elif(Direction=='e'):
+        elif(Direction=='e' or Direction== 'E'):
             x= x+1 
         else:
             print("Not a valid direction!")
@@ -39,9 +39,9 @@ while not (x==3 and y==1):
         print("You can travel: (S)outh or (E)ast")
         Direction = str(input("Direction: "))
         valid_direction = 'n' 's' 'e'
-        if (Direction=='s'):
+        if (Direction=='s' or Direction== 'S'):
             y = y-1
-        elif(Direction=='e'):
+        elif(Direction=='e' or Direction== 'E'):
             x= x+1 
         else:
             print("Not a valid direction!")
@@ -50,7 +50,7 @@ while not (x==3 and y==1):
         print("You can travel: (N)orth ")
         Direction = str(input("Direction: "))
         valid_direction = 'n'
-        if(Direction=='n'):
+        if(Direction=='n' or Direction== 'N'):
             y= y+1 
         else:
             print("Not a valid direction!")
@@ -59,10 +59,10 @@ while not (x==3 and y==1):
         print("You can travel: (S)outh or (W)est")
         Direction = str(input("Direction: "))
         valid_direction = 'w' 's'
-        if (Direction=='s'):
+        if (Direction=='s' or Direction== 'S'):
             y = y-1
         
-        elif(Direction=='w'):
+        elif(Direction=='w' or Direction== 'W'):
             x= x-1
         else:
             print("Not a valid direction!")
@@ -71,9 +71,9 @@ while not (x==3 and y==1):
         print("You can travel: (W)est or (E)ast")
         Direction = str(input("Direction: "))
         valid_direction = 'w' 'e'
-        if (Direction=='w'):
+        if (Direction=='w' or Direction== 'W'):
             x = x-1
-        elif(Direction=='e'):
+        elif(Direction=='e' or Direction== 'E'):
             x= x+1 
         else:
             print("Not a valid direction!")
@@ -82,7 +82,7 @@ while not (x==3 and y==1):
         print("You can travel: (N)orth")
         Direction = str(input("Direction: "))
         valid_direction = 'n'
-        if (Direction=='n'):
+        if (Direction=='n' or Direction== 'N'):
             y = y+1
         else:
             print("Not a valid direction!")
@@ -91,9 +91,9 @@ while not (x==3 and y==1):
         print("You can travel: (N)orth or (S)outh")
         Direction = str(input("Direction: "))
         valid_direction = 'n' 's'
-        if (Direction=='s'):
+        if (Direction=='s' or Direction== 'S'):
             y = y-1
-        elif(Direction=='n'):
+        elif(Direction=='n' or Direction== 'N'):
             y= y+1 
         else:
             print("Not a valid direction!")
@@ -102,10 +102,10 @@ while not (x==3 and y==1):
         print("You can travel: (W)est or (S)outh")
         Direction = str(input("Direction: "))
         valid_direction = 'w' 's'
-        if (Direction=='s'):
+        if (Direction=='s' or Direction== 'S'):
             y = y-1
         
-        elif(Direction=='w'):
+        elif(Direction=='w' or Direction== 'W'):
             x= x-1
         else:
             print("Not a valid direction!")
@@ -113,3 +113,4 @@ while not (x==3 and y==1):
     
 if (x==3 and y==1):
     print("Victory")
+    
