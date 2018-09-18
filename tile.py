@@ -8,12 +8,8 @@
 # Once you input your direction the instructions will pop up to show you the directions.
 #Once the final tile of 3,1 has been reached you will have won the game
 
-
-
-
 x = 1
 y = 1
-
 
 
 while not (x==3 and y==1):
