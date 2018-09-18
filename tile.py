@@ -7,6 +7,7 @@
 #'W' as in west
 # Once you input your direction the instructions will pop up to show you the directions.
 #Once the final tile of 3,1 has been reached you will have won the game
+#https://github.com/atlisteinnb/TileTraveler
 
 x = 1
 y = 1
@@ -36,7 +37,7 @@ while not (x==3 and y==1):
             print("Not a valid direction!")
 
     elif (x,y) == (1,3):
-        print("You can travel: (S)outh or (E)ast")
+        print("You can travel: (E)ast or (S)outh")
         Direction = str(input("Direction: "))
         valid_direction = 'n' 's' 'e'
         if (Direction=='s' or Direction== 'S'):
